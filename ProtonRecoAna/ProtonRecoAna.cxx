@@ -1,5 +1,5 @@
-#ifndef TEST_USERANALYSIS_CXX
-#define TEST_USERANALYSIS_CXX
+#ifndef PROTONRECO_PROTONRECOANA_CXX
+#define PROTONRECO_PROCONRECOANA_CXX
 
 #include "ProtonRecoAna.hh"
 #include <iostream>
@@ -15,7 +15,8 @@ void protonreco::ProtonRecoAna::SetupOutputTree(TTree* tfs_tree){
   fTree->SetObject(fTree->GetName(),title.c_str());
 }
 
-void protonreco::ProtonRecoAna::RunAnalysis(){
+void protonreco::ProtonRecoAna::RunAnalysis(art::Event const & e){
+	
   PrintInfo();
 }
 

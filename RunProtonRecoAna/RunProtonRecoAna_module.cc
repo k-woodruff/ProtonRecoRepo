@@ -64,7 +64,7 @@ protonreco::RunProtonRecoAna::RunProtonRecoAna(fhicl::ParameterSet const & p)
 
 void protonreco::RunProtonRecoAna::analyze(art::Event const & e)
 {
-  fMyAnalysisObj.RunAnalysis();
+  fMyAnalysisObj.RunAnalysis(e);
 }
 
 void protonreco::RunProtonRecoAna::reconfigure(fhicl::ParameterSet const & p)

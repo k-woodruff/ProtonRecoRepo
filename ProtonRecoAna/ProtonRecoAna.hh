@@ -4,11 +4,11 @@
  * 
  * \brief Little sample program for establishing a user analysis space.
  *
- * @author wketchum
+ * @author Tia Miceli Katherine Woodruff
 */
 
-#ifndef TEST_USERANALYSIS_H
-#define TEST_USERANALYSIS_H
+#ifndef PROTONRECO_PROTONRECOANA_H
+#define PROTONRECO_PROTONRECOANA_H
 
 #include <string>
 
@@ -28,7 +28,7 @@ public:
   /// Default destructor
   virtual ~ProtonRecoAna(){};
 
-  void RunAnalysis();
+  void RunAnalysis(art::Event const & e);
   void SetupOutputTree(TTree*);
   
  private:
